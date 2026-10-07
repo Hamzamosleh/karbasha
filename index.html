@@ -85,6 +85,13 @@ h2{font-family:var(--display);font-weight:400;font-size:2.4rem;margin:0 0 6px;te
 .copy{font:600 .9rem var(--body);background:transparent;color:var(--sage-deep);border:2px solid var(--sage);border-radius:999px;padding:4px 14px;cursor:pointer}
 [lang="ar"] .copy{font-family:var(--ar-body)}
 .copy:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+.chip.live{color:var(--peep);border-color:var(--peep)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px}
+.cta{display:inline-block;background:var(--peep);color:#fff;text-decoration:none;font:800 1rem var(--body);padding:11px 20px;border-radius:16px 20px 15px 22px;border:2px solid var(--ink);box-shadow:0 4px 0 0 var(--ink)}
+[lang="ar"] .cta,[lang="ar"] .more{font-family:var(--ar-body)}
+.cta:hover{transform:translateY(2px);box-shadow:0 2px 0 0 var(--ink)}
+.more{font:700 1rem var(--body);color:var(--sage-deep)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta{color:#1E1440}}
 footer{padding-block:34px 44px;border-top:2px dashed var(--line);color:var(--soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.95rem}
 footer .sig{font-family:var(--display);font-size:1.3rem;color:var(--ink)}
 @media (max-width:760px){.hero,.app{grid-template-columns:1fr}.robot{max-width:260px}.app{padding:22px}}
@@ -166,7 +173,7 @@ footer .sig{font-family:var(--display);font-size:1.3rem;color:var(--ink)}
   <path d="M48 96 L44 103 M48 96 L48 104 M48 96 L52 103" stroke="#E64A19" stroke-width="2.5" stroke-linecap="round"/>
   <path d="M72 96 L68 103 M72 96 L72 104 M72 96 L76 103" stroke="#E64A19" stroke-width="2.5" stroke-linecap="round"/>
 </svg>
-<div><h3>Peep English</h3><div class="arname" lang="ar">وقفة إنجليزي</div><span class="chip"><span class="en">Coming soon to Google Play</span><span class="ar">قريباً على Google Play</span></span></div></div>
+<div><h3>Peep English</h3><div class="arname" lang="ar">وقفة إنجليزي</div><span class="chip live"><span class="en">Out now on Google Play</span><span class="ar">نزل على Google Play</span></span></div></div>
     <p><span class="en">Every time you open an app you picked, Peep shows a short card with one English word or sentence at your level. Read it, hear it, and carry on.</span><span class="ar">كل ما تفتح تطبيق إنت اخترته، Peep بيطلعلك بطاقة صغيرة فيها كلمة أو جملة إنجليزي على قد مستواك. بتقرأها، بتسمعها، وبتكمّل.</span></p>
     <ul>
      <li><span><span class="en">Levels from A1 to C2, with a short placement test or a manual pick</span><span class="ar">مستويات من A1 لـ C2، باختبار قصير أو باختيارك</span></span></li>
@@ -175,6 +182,7 @@ footer .sig{font-family:var(--display);font-size:1.3rem;color:var(--ink)}
      <li><span><span class="en">You choose the apps, topics, daily count and schedule</span><span class="ar">إنت بتختار التطبيقات والمواضيع وعدد الكلمات والأوقات</span></span></li>
      <li><span><span class="en">Free. No ads. No subscriptions.</span><span class="ar">مجاني. بدون إعلانات. بدون اشتراكات.</span></span></li>
     </ul>
+    <div class="ctas"><a class="cta" href="https://play.google.com/store/apps/details?id=com.karbasha.peepenglish&amp;utm_source=karbasha_site&amp;utm_medium=website&amp;utm_campaign=studio_home"><span class="en">Get it on Google Play</span><span class="ar">نزّله من Google Play</span></a><a class="more" href="peep-english/"><span class="en">More about Peep</span><span class="ar">أكثر عن Peep</span></a></div>
    </div>
    <div class="phone" aria-label="Example of a Peep English card on a phone screen">
     <div class="bar"></div>
@@ -211,7 +219,7 @@ footer .sig{font-family:var(--display);font-size:1.3rem;color:var(--ink)}
   </div>
  </section>
 </main>
-<footer><span class="sig">Karbasha Studio</span><a href="peep-english/privacy/" style="color:inherit">Peep English privacy policy</a><span>© 2026 · <span class="en">Apps and games, scribbled with care</span><span class="ar">تطبيقات وألعاب مخربشة بحب</span></span></footer>
+<footer><span class="sig">Karbasha Studio</span><a href="peep-english/" style="color:inherit">Peep English</a><a href="peep-english/privacy/" style="color:inherit">Peep English privacy policy</a><span>© 2026 · <span class="en">Apps and games, scribbled with care</span><span class="ar">تطبيقات وألعاب مخربشة بحب</span></span></footer>
 </div>
 <script>
 (function(){const root=document.documentElement;let lang='en';
